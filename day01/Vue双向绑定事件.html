@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="js/vue..min.js"></script>
+</head>
+<body>
+    <div id="add">
+        <input type="text" id="gr" v-model="name" placeholder="你的名字">
+        <h1>你好：{{name}}</h1>
+        <button  @click="dee">尼玛</button>
+        <p></p>
+    </div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    $(function () {
+        new Vue({
+            el : "#add",
+            data : {
+                name:''
+            },
+            methods:{
+                dee:function(){
+                    if ($("#gr").innerHTML != ""){
+                        localStorage.setItem("awe",this.name);
+                    }
+                }
+            },
+            beforeDestroy:function () {
+               var se = localStorage.getItem("awe");
+               $("p").innerHTML = se;
+            }
+        })
+    })
+
+</script>

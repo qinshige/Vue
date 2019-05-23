@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="add">
+        <p> 100/10 = {{number / 10}}</p>
+        <p>你是猪吗?{{time?"不是":"是"}}</p>
+        <p>{{new Date()}}</p>
+
+        <p>{{parseInt(Math.random()*(5-1+1)+1)}}</p>
+
+    </div>
+</body>
+</html>
+<script>
+        new Vue({
+            el:"#add",
+            data:{
+                number: 100,
+                time : true,
+            }
+        })
+</script>

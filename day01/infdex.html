@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue..min.js"></script>
+</head>
+<body>
+        <div id="app">
+            <input type="text" v-on:input = "fe">
+            <p>{{title}}</p>
+        </div>
+</body>
+</html>
+<script>
+    var app=new Vue({
+        el: "#app",
+        data:{
+            title : "hellow"
+        },
+        methods : {
+            fe :function(e){
+                this.title = e.target.value;
+            }
+        }
+    })
+    console.log(app);
+</script>

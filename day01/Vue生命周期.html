@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue..min.js"></script>
+</head>
+<body>
+    <div id="add">
+        {{nao}}
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el : "#add",
+        data : {
+            nao:"hellow world"
+        },
+        // 在 beforeMout 时 还不管事情，也就是说 好没有渲染到数据 里面，此时的这个组件还是空的；
+        beforeMout(){
+            console.log(this.nao); //空
+        },
+        // 当mounted时， 才会往 添加东西，也就是说vue正式接管 当前元素
+        mounted(){
+            console.log(this.nao);// hellow world
+        },
+    })
+</script>

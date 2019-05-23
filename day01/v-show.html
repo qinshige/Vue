@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue..min.js"></script>
+    <style>
+        #add p{
+            width: 100px;
+            background: yellow;
+            position: absolute;}
+    </style>
+</head>
+<body>
+    <div id="add">
+        <button v-on:click="ft">点击显示隐藏</button>
+        <p v-show="flag">21231231231</p>
+    </div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    new Vue({
+        el:"#add",
+        data:{
+            flag : true
+        },
+        methods:{
+            ft:function(){
+                if (this.flag){
+                    this.flag=false;
+                    $("#add p").css({
+                        color:"red",
+                        fontsize:"25px"
+                    }).animate({
+                        "left":"10px"
+                    },100);
+
+                } else{
+                    this.flag=true;
+                    $("#add p").css({
+                        color:"red",
+                        fontsize:"25px"
+                    }).animate({
+                        "left":"200px"
+                    },1000);
+
+                }
+            }
+        }
+    })
+</script>

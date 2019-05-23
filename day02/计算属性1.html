@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div id="add">
+        <button @click="">-</button>
+        总价：{{prict}}
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el : "#add",
+        data:{
+            package1:[{
+                name:"手机",
+                prict:500,
+                count : 5
+            },
+                {
+                    name :"衣服",
+                    prict:100,
+                    count:5,
+                },
+                {
+                    name : "hai",
+                    prict:200,
+                    count:3
+                }
+            ]
+        },
+        computed : {
+            prict : function () {
+                var price = 0;
+                for (var i=0;i<this.package1.length;i++){
+                    price += this.package1[i].count * this.package1[i].prict;
+                }
+                return price;
+            }
+        }
+    })
+</script>

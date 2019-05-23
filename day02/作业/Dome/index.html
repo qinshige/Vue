@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div,html,body,p,ul,li,h5{
+        margin:0;padding: 0;}
+    #app{
+        width: 700px;
+        height: auto;
+        border:2px solid #5e5e5e;
+        box-shadow: 7px 6px 15px 0px;
+        margin: 100px auto;
+        padding: 25px;
+    }
+    #app h5{
+        text-align: center;
+        font-size: 25px;
+    }
+    #app .fom p{
+        font-size: 15px;margin: 10px;
+    }
+    #app .fom p input{
+        width: 400px; padding: 5px;
+        border-radius:5px;outline-style: none;
+    }
+    #app .fom p button{
+        width: 55px;padding: 3px;
+        color: #fff;
+        font-size: 15px;
+        background: cornflowerblue;outline-style: none;border-radius:5px;margin:5px 15px;
+    }
+    #app table tr th{width: 100px;}
+    #app table tr th.kuan{width: 200px;}
+    #app table tr td{text-align: center;padding: 5px 0;}
+    .tan{
+        width: 300px;
+        height: 100px; padding: 20px;text-align: center;
+        background: #5e5e5e;
+        border: 1px solid #ff6600;position: absolute;
+        top: 0px;margin: auto;left: 0;right: 0;
+        }
+    .tan button{
+        margin-left: 10px;background: #2e6da4;
+        border: none;outline-style: none;padding: 7px 18px;
+        color: #fff;letter-spacing: 2px;text-align: center;
+    }
+</style>
+<body>
+    <div id="app">
+        <h5>{{title}}</h5>
+        <div class="fom">
+            <p><label >姓名：</label><input type="text"placeholder="请输入姓名" v-model="user.name"></p>
+            <p><label >年龄：</label><input type="text"placeholder="请输入年龄" v-model="user.age"></p>
+            <p><label >邮箱：</label><input type="text"placeholder="请输入邮箱" v-model="user.email"></p>
+            <p><button class="add" v-on:click="Adds" >添加</button><button class="chz">重置</button></p>
+        </div>
+        <hr>
+        <h5>{{biao}}</h5>
+        <table border="1" style="border-collapse:collapse;">
+            <tr>
+                <th>序号</th><th>姓名</th><th>年龄</th><th class="kuan">邮箱</th><th>操作</th>
+            </tr>
+            <tr v-for="(it,index) in array">
+                <td>{{index + 1}}</td>
+                <td>{{it.name}}</td>
+                <td>{{it.age}}</td>
+                <td>{{it.email}}</td>
+                <td><button @click="fa(nowIndex = index)" class="kok">删除</button></td>
+            </tr>
+            <tr>
+                <td class="ko" colspan="5" style="text-align: right;"><button class="deo" @click="fas(nowIndex = -1)">删除所有</button></td>
+            </tr>
+        </table>
+        <div class="tan" v-show="guen">
+            <h5 style="text-align: center;">确定要删除吗？</h5>
+            <button @click="dele">确定</button>
+            <button class="koe"@click="qu">取消</button>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el : "#app",
+        data:{
+            title : "添加用户",
+            biao:"用户列表",
+            guen:false,
+            array:[
+                {name:"ddd",age:15,email:"3267291651@qq.com"},
+                {name:"ddd",age:15,email:"3267291651@qq.com"}
+            ],
+            user : {},
+            nowIndex:-1
+        },
+        methods: {
+            Adds: function () {
+                this.array.push(this.user);
+                this.user = {}
+            },
+            dele: function () {
+                if (this.nowIndex == -1) {
+                    this.array = [];
+                } else {
+                    this.array.splice(this.nowIndex, 1);
+                }
+                this.guen = false;
+            },
+            fa:function () {
+                if (this.guen == false){
+                    this.guen = true;
+                }
+            },
+            fas:function () {
+                    this.guen = true;
+            },
+            qu:function(){
+                this.guen = false;
+            }
+        }
+    })
+
+</script>

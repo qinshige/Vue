@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        {{date | formDate}}
+    </div>
+
+</body>
+</html>
+<script>
+        function zore(num){
+            if (num<10){
+                return "0"+num;
+            } else{
+                return ""+num
+            }
+        }
+    var add = new Vue({
+        el:"#app",
+        data:{
+            date: new Date(),
+            timer:null
+        },
+        filters:{
+            formDate: function(value) {
+                var date = new Date(value);
+                console.log(date);
+                //年
+                var nian = date.getFullYear();
+                //月
+                var yue = date.getMonth();
+                //日
+                var ri = date.getDay();
+                //时
+                var shi = date.getHours();
+                //分
+                var fen = date.getMinutes();
+                //秒
+                var miao = date.getSeconds();
+                return zore(nian) + "/"+zore(yue)+"/"+ zore(ri) +" "+zore(shi)+":"+zore(fen)+":"+zore(miao);
+            }
+        },
+        mounted:function () {
+            var that = this;
+            that.timer=setInterval(function () {
+                that.date = new Date();
+            },1000)
+        },
+        deforeDestroy:function () {
+
+        }
+    })
+
+</script>
