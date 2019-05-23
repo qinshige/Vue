@@ -5,14 +5,43 @@
     <title>Title</title>
     <script src="js/vue.min.js"></script>
 </head>
+<style>
+    .box{
+        color: purple;
+    }
+    .active{
+        padding: 5px;
+        border:1px solid #f60;
+        text-align: center;
+    }
+    .error{
+        padding: 5px;
+        border:1px solid yellow;
+        text-align: center;
+    }
+</style>
 <body>
     <div id="add">
-        <p id="box">{{title}}</p>
+        <button @click="uf = !uf">Class</button>
+        <p id="box" :class="fun">{{text}}</p>
     </div>
 </body>
 </html>
 <script>
     new Vue({
-
+        el:"#add",
+        data:{
+            text:"啦啦啦！",
+            uf : true,
+            fd : false
+        },
+        computed : {
+            fun:function(){
+                return{
+                   active : this.uf && !this.fd,
+                    error : !this.uf && !this.fd
+                }
+            }
+        }
     })
 </script>

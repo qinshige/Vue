@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    <div id="app2">
+        <p>{{luaLua}}</p>
+    </div>
+</body>
+</html>
+<script>
+    var app = new Vue({
+        el : "#app",
+        data:{
+            Luaa : "111,122,133"
+        },
+    });
+
+new Vue({
+        el : "#app2",
+        data:{
+
+        },
+        computed : {
+            luaLua : function(){            //反转
+                return app.Luaa.split(",").reverse().join("-")
+            }
+        }
+
+    })
+</script>

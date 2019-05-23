@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div id="add">
+        <button @click="test">点击</button>
+        <p>{{as | dd}}万</p>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el : "#add",
+        data:{
+            as : 96155
+        },
+        filters : {
+            dd : function (val) {
+                var num = Math.floor((val/10000)*10)/10;
+                return num;
+            }
+        },
+        methods : {
+            test : function () {
+                this.as = 97000;
+                console.log(this.as)
+            }
+        }
+    })
+</script>
