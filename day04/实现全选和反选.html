@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+<!--                            绑定事件                          点击事件    -->
+        <input type="checkbox" v-model="checkAll.check" @change="checkAllBox">
+        <label for="">{{checkAll.name}}</label>
+        <hr>
+        <p v-for="itme in array">
+            <input type="checkbox" @change="curChange" v-moudel="itme.check">
+        </p>
+        <button @click="test">反选</button>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el :"#app",
+        data : {
+            checkAll : {name : '全选',check : false},
+            array : [
+                {name : "小米",check: false},
+                {name : "华为1",check: false},
+                {name : "小米2",check: false},
+                {name : "小米3",check: false},
+                ]
+        },
+        methods : {
+            test : function () {
+                var  that = this; // 防止闭包
+                //遍历
+                this.array.forEach(function (itme,index) {
+                    // 如果 item
+                    if (itme.check){
+                        itme.check = false;
+                    }else{
+                        itme.check = true;
+                    }
+                })
+            },
+            // 点击的时候 实现 全选 全 不选
+            checkAllBox : function(){
+                var that = this;
+                this.array.forEach(function (itme,index) {
+                    itme.check = that.checkAll.check;
+                }) 
+            },
+            curChange : function () {
+                var that = this;
+                var a = this.array.filter(function (itme,index) {
+                    return itme.check == true;
+                })
+                if(a.length == this.array.length){
+                    this.checkAll.check = true;
+                }else{
+                    this.checkAll.check=false;
+                }
+            }
+        }
+    })
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+    <style>
+        #app{
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;margin:100px auto;
+        }
+        table tr th{width: 100px;}
+        table tr td{width: 50px;
+                text-align: center;}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <table border="1"style="border-collapse:collapse;margin: auto">
+            <tr>
+               <th><input type="checkbox" @change="checkAll" v-model="check"> </th> <th>编号</th> <th>商品名称</th> <th>商品价格</th> <th>购买数量</th> <th>操作</th>
+            </tr>
+            <tr v-for="(it,index) in array">
+<!--                                        绑定 给所有的 checkbox 添加 it.check  改变 curChange  -->
+                <td><input type="checkbox"v-model="it.check" @change="curChange"></td>
+                <td>{{index+1}}</td>
+                <td>{{it.name}}</td>
+                <td>{{it.qian}}</td>
+                <td>
+                    <button @click="jian(index)":disabled="it.num === 1">-</button>
+                    <span>{{it.num}}</span>
+                    <button @click="jia(index)":disabled="it.num === 99">+</button>
+                </td>
+                <td><button @click="remove(index)">删除</button></td>
+            </tr>
+        </table>
+        <p>总价:  <span>￥{{prict}}</span></p>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el : "#app",
+        data :{
+           check : true,
+            array:[
+                {name:"iPhone 7",qian:6188, num : 1,check:false},
+                {name:"iPad Pro",qian:5888, num : 1,check:false},
+                {name:"iPad Pro",qian:5888, num : 1,check:false},
+                {name:"iPad Pro",qian:5888, num : 1,check:false},
+                {name:"iPad Pro",qian:5888, num : 1,check:false}
+            ],
+        },
+        methods:{
+            jian : function(index){
+                if (this.array[index].num===1) return;
+                this.array[index].num--;
+            },
+            remove: function(index){
+               this.array.splice(index,1);
+            },
+            jia : function(index){
+                this.array[index].num++;
+            },
+            checkAll: function () {
+                var than = this;
+                //forEach 遍历              DOM元素 , 下标
+                this.array.forEach(function (it,index) {
+                    it.check = than.check;
+                })
+            },
+            curChange : function () {
+                this.change();
+            },
+            change : function(){
+                // 过滤  商品 元素  返回 都是 选中 状态
+              var ele = this.array.filter(function (it,index) {
+                  return it.check == true;
+              });
+              // 如果 当前选中的 元素长度 等于 数组里数据的长度  就 选中 否则 就是 false;
+              if (ele.length == this.array.length){
+                  this.check = true;
+              } else{
+                  this.check = false;
+              }
+            },
+        },
+        computed : {
+            prict : function(){
+                var pr = 0;
+                for (var i=0;i<this.array.length;i++){
+                    if (this.array[i].check){
+                        pr += this.array[i].qian * this.array[i].num;
+                    }
+                }
+                return pr.toString().replace(/\B(?=(\d{3})+$)/g,",");
+            },
+        },
+        // 实例 挂载
+        mounted (){
+            this.change();
+        }
+    })
+</script>

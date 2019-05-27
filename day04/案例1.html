@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin: 0;
+            padding: 0;}
+        #app{width: 500px;
+            border: 1px solid #ff6600;margin: 100px auto;padding: 15px;}
+        #app p{margin-top: 1px;}
+        #app span{margin-top: 5px;display: block;}
+        #app p input{
+            width: 80%;border-radius: 5px;padding: 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <span>First Name</span>
+        <p><input type="text"placeholder="Max" v-model="one"></p>
+        <span>Last Name</span>
+        <p><input type="text"placeholder="Schwarzmvller" v-model="two"></p>
+        <span>Mail</span>
+        <p><input type="text" v-model="three"></p>
+        <span>password</span>
+        <p><input type="text"></p>
+        <input type="radio" id="yes" v-model="si"><label for="yes">Yse</label> <input type="radio" id="no"v-model><lable for="no">No</lable>
+        <p><button>牛逼 Class</button></p>
+
+
+        <div id="add">
+            <p>First Name:{{one}}</p>
+            <p>Last Name:{{two}}</p>
+            <p>Mail:{{three}}</p>
+            <p>password:{{si}}</p>
+            <!--        <p>{{one}}</p>-->
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="js/vue.min.js"></script>
+<script>
+    new Vue({
+        el : "#app",
+        data : {
+            one:"",
+            two:"",
+            three:"",
+            password:""
+        }
+    })
+</script>

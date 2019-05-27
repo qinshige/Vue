@@ -2,10 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1c16ce3-43e5-4c0d-9d77-a7bd179e1779" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/day01/v-html.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day02/class语法组.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day02/过滤器.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day02/class.html" beforeDir="false" afterPath="$PROJECT_DIR$/day02/class.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/js/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/购物车.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03/购物车2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/1v-model基本用法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/1创建组件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/1创建组件2按钮加减.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/2文本域的使用方法.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/js/jquery-1.8.3.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/js/vue.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/props.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/下拉列表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/单选按钮.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/单选按钮1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/实现全选和反选.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/案例1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04/绑定值.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,28 +34,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day02/class.html">
+        <entry file="file://$PROJECT_DIR$/day04/1创建组件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/day02/class语法组.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+            <state relative-caret-position="190">
+              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day02/过滤器.html">
+        <entry file="file://$PROJECT_DIR$/day04/1创建组件2按钮加减.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="165">
+              <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day04/props.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -78,6 +93,22 @@
         <option value="$PROJECT_DIR$/day02/过滤器.html" />
         <option value="$PROJECT_DIR$/day02/class.html" />
         <option value="$PROJECT_DIR$/day02/class语法组.html" />
+        <option value="$PROJECT_DIR$/day02/作业/Dome/index.html" />
+        <option value="$PROJECT_DIR$/购物车.html" />
+        <option value="$PROJECT_DIR$/day03/index.html" />
+        <option value="$PROJECT_DIR$/day03/购物车.html" />
+        <option value="$PROJECT_DIR$/day04/案例1.html" />
+        <option value="$PROJECT_DIR$/day03/购物车2.html" />
+        <option value="$PROJECT_DIR$/day04/1v-model基本用法.html" />
+        <option value="$PROJECT_DIR$/day04/2文本域的使用方法.html" />
+        <option value="$PROJECT_DIR$/day04/单选按钮.html" />
+        <option value="$PROJECT_DIR$/day04/单选按钮1.html" />
+        <option value="$PROJECT_DIR$/day04/下拉列表.html" />
+        <option value="$PROJECT_DIR$/day04/绑定值.html" />
+        <option value="$PROJECT_DIR$/day04/实现全选和反选.html" />
+        <option value="$PROJECT_DIR$/day04/1创建组件.html" />
+        <option value="$PROJECT_DIR$/day04/1创建组件2按钮加减.html" />
+        <option value="$PROJECT_DIR$/day04/props.html" />
       </list>
     </option>
   </component>
@@ -85,14 +116,17 @@
     <option name="files">
       <list>
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/Vue.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="426" />
-    <option name="y" value="20" />
-    <option name="width" value="1368" />
-    <option name="height" value="993" />
+    <option name="x" value="222" />
+    <option name="y" value="122" />
+    <option name="width" value="1590" />
+    <option name="height" value="888" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -100,7 +134,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -111,18 +144,19 @@
             <path>
               <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
+              <item name="day04" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day02" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -133,13 +167,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Work\Vue\day02" />
-      <recent name="D:\Work\Vue" />
-      <recent name="D:\Work\Vue\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\Vue\day03" />
       <recent name="D:\Work\Vue\day01" />
+      <recent name="D:\Work\Vue" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Work\Vue\day04" />
+      <recent name="D:\Work\Vue\day03" />
+      <recent name="D:\Work\Vue\day03\js" />
+      <recent name="D:\Work\Vue\day02" />
       <recent name="D:\Work\Vue" />
     </key>
   </component>
@@ -177,18 +214,22 @@
       <updated>1558418657832</updated>
       <workItem from="1558418658973" duration="18006000" />
       <workItem from="1558489984180" duration="13180000" />
-      <workItem from="1558591587910" duration="16008000" />
+      <workItem from="1558591587910" duration="16249000" />
+      <workItem from="1558659634148" duration="13032000" />
+      <workItem from="1558702589422" duration="2141000" />
+      <workItem from="1558785235244" duration="10744000" />
+      <workItem from="1558919228323" duration="18861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47194000" />
+    <option name="totallyTimeSpent" value="92213000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="579" y="25" width="1094" height="794" extended-state="0" />
+    <frame x="178" y="98" width="1272" height="710" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23440453" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16909385" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -282,24 +323,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day02/作业/jjjjjj/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day02/作业/Dome/打怪兽.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="160" column="41" lean-forward="true" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/作业/jjjjjj/index.html" />
     <entry file="file://$PROJECT_DIR$/day02/语法计算.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -321,31 +345,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day02/作业/Dome/index.html">
+    <entry file="file://$PROJECT_DIR$/day02/class语法组.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day02/过滤器.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="228">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day02/class.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="135">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day02/class语法组.html">
+    <entry file="file://$PROJECT_DIR$/day02/过滤器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        <state relative-caret-position="192">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/tables.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="219" column="39" lean-forward="true" selection-start-line="219" selection-start-column="39" selection-end-line="219" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/js/vue.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" column="8" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/js/vue.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/作业/Dome/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="71" column="17" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day02/作业/Dome/打怪兽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="126" column="32" lean-forward="true" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/案例1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-78">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/2文本域的使用方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/1v-model基本用法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/单选按钮1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/购物车.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/单选按钮.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/实现全选和反选.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/绑定值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day03/购物车2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="69" column="42" lean-forward="true" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/下拉列表.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/1创建组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/1创建组件2按钮加减.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day04/props.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>

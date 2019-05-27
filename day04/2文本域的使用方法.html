@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<!--   目的  实现 输入内容 时 p 标签 同步        -->
+    <div id="app">
+        <input type="text" placeholder="请输入...." v-model="test"><span>{{test}}</span>
+        <hr>
+        <label for="">用户留言：</label>
+        <textarea name="" id="" cols="30" rows="10" v-model="liuyan"placeholder="请输入。。。。"></textarea>
+        <span>{{liuyan}}</span>
+        <button @click="star">提交</button>
+    </div>
+</body>
+</html>
+<script>
+    new Vue({
+        el : "#app",
+         data :{
+            test : "",
+             liuyan : ""
+         },
+        methods : {
+           star : function () {
+
+               console.log(this.test + this.liuyan)
+           }
+        }
+    })
+</script>
