@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <my-Hellow></my-Hellow>
+</div>
+</body>
+</html>
+
+<script>
+    var myHellow = {
+            template : "<div><button @click='handClick'>Change</button></div>",
+        data : function () {
+            return {
+                message : "点击生效"
+            }
+        },
+        methods : {
+                handClick : function () {
+                    this.$parent.message = this.message;
+                }
+        }
+    }
+
+    new Vue({
+        el : "#app",
+        data : {
+            message : ""
+        },
+        components : {
+            myHellow
+        },
+
+
+        methods : {
+
+        },
+        mounted(){
+
+        }
+    })
+</script>

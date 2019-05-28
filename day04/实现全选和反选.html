@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="js/vue.min.js"></script>
 </head>
 <body>
     <div id="app">
 <!--                            绑定事件                          点击事件    -->
-        <input type="checkbox" v-model="checkAll.check" @change="checkAllBox">
+        <input type="checkbox" v-model="checkAll.check" @click="checkAllBox">
         <label for="">{{checkAll.name}}</label>
         <hr>
         <p v-for="itme in array">
-            <input type="checkbox" @change="curChange" v-moudel="itme.check">
+            <input type="checkbox" @change="curChange" v-model="itme.check">
         </p>
         <button @click="test">反选</button>
     </div>
 </body>
 </html>
+<script src="js/vue.min.js"></script>
 <script>
     new Vue({
         el :"#app",
@@ -28,7 +28,7 @@
                 {name : "华为1",check: false},
                 {name : "小米2",check: false},
                 {name : "小米3",check: false},
-                ]
+                ],
         },
         methods : {
             test : function () {
@@ -36,22 +36,17 @@
                 //遍历
                 this.array.forEach(function (itme,index) {
                     // 如果 item
-                    if (itme.check){
-                        itme.check = false;
-                    }else{
-                        itme.check = true;
-                    }
+                    itme.check = !itme.check
                 })
             },
             // 点击的时候 实现 全选 全 不选
             checkAllBox : function(){
                 var that = this;
                 this.array.forEach(function (itme,index) {
-                    itme.check = that.checkAll.check;
-                }) 
+                    itme.check = !that.checkAll.check;
+                })
             },
             curChange : function () {
-                var that = this;
                 var a = this.array.filter(function (itme,index) {
                     return itme.check == true;
                 })
