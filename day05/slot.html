@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <myHello>
+            <div>草你妈啦！</div>
+            <p>热死老子了！</p>
+            <p slot="jiu">啦啦啦啦啦啦啦啦绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿</p>
+        </myHello>
+    </div>
+</body>
+</html>
+<script>
+    Vue.component=(
+        'myHello',{
+            template : '<div> <slot name="jiu"></slot>  <slot></slot></div> '
+    }
+    )
+
+    new Vue({
+        el : "#app",
+        data : {
+            
+        }
+    })
+</script>
