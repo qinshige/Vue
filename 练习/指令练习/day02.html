@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <div v-time="timeNow"></div>
+        <div v-theme="timeBefore"></div>
+    </div>
+</body>
+</html>
+<script src="js/time.js"></script>
+<script>
+    var app = new Vue({
+        el : "#app",
+        data : {
+            timeNow:(new Date()).getTime(),
+            timeBefore :  1488930695721
+        },
+        directives: {
+            "time" : {
+                bind : function (el,binding,vnode) {
+                    el.innerHTML = Time.getFormateTime(binding.value);
+                    el.timeout = setInterval(function () {
+                        el.innerHTML = Time.getFormateTime(binding.value);
+                    },60000);
+                },
+                unbind : function (el) {
+                    clearInterval(el.timeout);
+                    delete el.timeout;
+                }
+            }
+        }
+    });
+
+</script>

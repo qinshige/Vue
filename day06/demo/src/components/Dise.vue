@@ -1,7 +1,7 @@
 <template>
     <div id="spp">
       <button @click="jian" :disabled="cur<=min">-</button>
-            <input type="text" :value="cur" >
+            <input type="text" :value="cur">
       <button @click="jia" :disabled="cur>=max">+</button>
     </div>
 </template>

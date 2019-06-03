@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.min.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #app{width: 500px;margin: 30px auto;
+            }
+        #app .cent{width: 100%;}
+        #app .cent button  {width: 100%;padding: 5px 0;}
+        #app ul li{padding: 10px 35px;}
+        #app ul{list-style: none;border: 1px solid #000;border-top:none;}
+    </style>
+</head>
+<body>
+<div id="app">
+   <div class="cent" v-caonima="Ccao">
+       <button @click="flag = !flag">点击</button>
+       <ul v-show="flag">
+           <li v-for="item in array">{{item}}</li>
+       </ul>
+   </div>
+
+</div>
+</body>
+</html>
+<script>
+    new Vue({
+        el : "#app",
+        data : {
+            array: ["张三","李四","王五"],
+            flag : false
+        },
+        methods : {
+            Ccao : function () {
+                this.flag = false;
+            }
+        },
+        directives : {
+            "caonima" : {
+                bind :function(el,binding,vnode) {
+                    function changedocum(e){
+                        if (el.contains(e.target)){
+                            return false;
+                        }
+                        if (binding.expression){
+                            binding.value(e);
+                            console.log(binding)
+                        }
+                    }
+                    // el.as = changedocum;
+                    document.addEventListener("click",changedocum);
+                    // documentHear();
+                }
+            }
+        }
+    });
+</script>
