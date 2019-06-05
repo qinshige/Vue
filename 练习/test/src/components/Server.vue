@@ -8,11 +8,11 @@
       </div>
       <div class="sss">
         <input type="button" @click="guen" :disabled = "flag" value="提交">
-        <router-link to="/Server1">
-          <button :disabled = "flag" id="xia">
+
+          <button :disabled = "flag" @click="group" id="xia">
              上一步 
           </button>
-        </router-link>
+    
         <input type="reset"  value="重置">
       </div>
       </form>
@@ -31,6 +31,9 @@
       methods : {
         guen : function () {
           this.$emit("wenzi",this.wenzi);
+        },
+        group : function () {
+          this.$router.go(-1);
         }
       }
     }

@@ -12,9 +12,9 @@
           下一步
         </button>
         </router-link>
-        <router-link to="/">
-        <button>上一步</button>
-        </router-link>
+
+            <button @click="aUp">上一步</button>
+
         <input type="reset"  value="重置" @click="aty">
       </div>
       </form>
@@ -37,6 +37,10 @@
         },
         lovehao : function () {
           this.$emit("love",this.arra);
+        },
+        aUp : function () {
+          alert(11);
+          this.$router.go(-1);
         }
       },
       mounted (){

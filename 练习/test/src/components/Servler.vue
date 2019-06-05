@@ -31,7 +31,7 @@
        },
       methods : {
         aty : function(){
-          this.bog.arr = this.ted
+          this.bog.arr = this.bog.ted
         },
         fun : function () {
           this.$emit("yu",this.bog.arr);
