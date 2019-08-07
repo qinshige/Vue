@@ -1,21 +1,27 @@
-import Vue from 'vue'
+
 import VueResource from 'vue-resource'
 import App from './App.vue'
-import VueRouter from 'vue-router'
-
-import Routes from './routes'
-
 import Bmob from "hydrogen-js-sdk";
 // 挂载到全局使用
 Vue.prototype.Bmob = Bmob;
 
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+//引入
+import Routes from './routes'
 Vue.use(VueRouter);
-
 //创建路由
 const router = new VueRouter({
   routes : Routes,
   mode : 'history'
 })
+new Vue({
+  el: '#app',
+  render: h => h(App),
+  router : router
+})
+
+
 
 //自定义属性
   Vue.directive('clak',{
@@ -35,12 +41,3 @@ Vue.filter("snippet",function (value) {
   return value.slice(0,100)+"...";
 })
 Vue.use(VueResource);
-
-
-
-
-new Vue({
-  el: '#app',
-  render: h => h(App),
-  router : router
-})

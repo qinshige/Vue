@@ -65,18 +65,6 @@
                console.log(data);
                this.flag = true;
             })
-            // 初始化
-            // Bmob.initialize("afd3198160cbe2961553876fe67beaa8", "18d33b71559bb966f201bd6a0a0880f4");
-            // const query = Bmob.Query('Blog');
-            // query.set("title",this.blog.title);
-            // query.set("author",this.blog.author);
-            // query.set("inner",this.blog.content);
-            // query.save().then(res => {
-            //   this.flag = true;
-            //   // console.log(res)
-            // }).catch(err => {
-            //   console.log(err)
-            // })
           }
       }
 

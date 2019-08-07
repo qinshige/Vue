@@ -11,7 +11,7 @@
         </tr>
         <tr>
           <td>
-           <img src="../../static/images/qixi01.jpg" alt=""> <span>七喜柠檬味碳酸饮料整箱330ml*24促销装</span>
+           <img src="../../static/images/qixi01.jpg"> <span>七喜柠檬味碳酸饮料整箱330ml*24促销装</span>
           </td><td>￥43.90</td><td><input class="num" type="number"></td><td>￥43.9</td><td><a>退款</a></td>
         </tr>
       </table>
@@ -62,23 +62,6 @@
     color:  #409eff;
     cursor: pointer;
     font-size: 14px;
-  }
-  .fu .two1 table .ki{
-    text-align: right;
-    border-bottom:none;
-  }
-  .fu .two1 table .ki .btn{
-    width: 120px;
-    line-height: 36px;
-    background: #95bf47;
-    border: none;
-    outline-style: none;
-    color: #fff;
-    display: inline-block;
-    cursor: pointer;
-  }
-  .fu .two1 table .ki span{
-    margin-right: 5px;
   }
 </style>
 

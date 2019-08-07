@@ -5,7 +5,7 @@
       <input type="text" v-model="search" placeholder="搜索">
       <div v-for="blog in filt" class="single-blog">
         <router-link v-bind:to="'/blog/' + blog.id " exact>
-             <h2 v-clak>{{blog.title | toup}}</h2>
+             <h2 v-cloak>{{blog.title | toup}}</h2>
         </router-link>
         <div>
           {{blog.body | snippet}}
@@ -19,28 +19,20 @@
       name: "ShowBlogs",
       data : function () {
         return {
-            blogs:[],
+            blog:[],
             search:""
         }
       },
       created() {
           this.$http.get("https://jsonplaceholder.typicode.com/posts")
             .then(function (data) {
-              // console.log(data)
-                this.blogs = data.body.slice(0,10);
-                console.log(this.blogs);
+                this.blog = data.body.slice(0,10);
+                console.log(this.blog);
             })
-        // // 初始化
-        // Bmob.initialize("afd3198160cbe2961553876fe67beaa8", "18d33b71559bb966f201bd6a0a0880f4");
-        // const query = Bmob.Query("Blog");
-        // query.find().then(res => {
-        //   console.log(res)
-        //
-        // });
       },
       computed : {
         filt : function () {
-          return this.blogs.filter((blog)=>{
+          return this.blog.filter((blog)=>{
             return blog.title.match(this.search);
           })
         }

@@ -5,14 +5,18 @@
         <div class="center_left"><span>你好,&nbsp;&nbsp;游客</span>&nbsp;&nbsp;&nbsp;&nbsp;<span>消息&nbsp;0</span></div>
         <div class="center_right">
           <ul>
-            <router-link to="/Cart">
             <li>
+              <router-link to="/Cart">
               我的订单
-            </li>
-            </router-link>
-               <router-link to="/Order">
-                 <li>购物车</li>
               </router-link>
+            </li>
+            <li>
+              <router-link to="/Order">
+                <i class="fa fa-shopping-cart "></i>
+                购物车
+              </router-link>
+            </li>
+
             <li>收藏夹</li>
             <li>商家入口</li>
           </ul>
@@ -35,6 +39,7 @@
   import Lunbo from './component/Lunbo';
   import Catt from './component/Cart';
   import Order from './component/Order';
+  import xingQing from './component/Xq';
 export default {
   name: 'app',
   data () {
@@ -50,7 +55,8 @@ export default {
   components : {
     Lunbo,
     Catt,
-    Order
+    Order,
+    xingQing
   }
 }
 </script>
@@ -83,6 +89,12 @@ export default {
     float: left;
     margin-right:15px;
     cursor: pointer;
+    /*鼠标移入禁用*/
+    cursor: not-allowed;
+  }
+  #app .one .center ul li a{
+    color: #999;
+    text-decoration: none;
   }
   #app .one .center .center_left{
     float: left;
